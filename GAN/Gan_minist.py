@@ -4,15 +4,10 @@ import torch.nn as nn
 import numpy as np
 import argparse
 import swanlab
-
-parser = argparse.ArgumentParser(description='The parser for text classification')
-parser.add_argument('--batch_size', type=int, default=256, help='batch size of train')
-parser.add_argument('--learning_rate', type=float, default=0.1, help='Learning rate of train')
-parser.add_argument('--epoch', type=int, default=200, help='epoch of train')
-parser.add_argument('--exp', type=str, default='GAN', help='exp name')
-parser.add_argument('--latent_size', type=int, default='64', help='latent size')
-parser.add_argument('--image_size', type=int, default='784', help='image size')
-args = parser.parse_args()
+import model
+from model import Generator
+from model import Discriminator
+from model import args
 
 logdir="./logs"
 
@@ -24,64 +19,7 @@ swanlab.init(
 
 use_gpu = torch.cuda.is_available()
 
-class Generator(nn.Module):
-
-    def __init__(self):
-        super(Generator, self).__init__()
-
-        self.model = nn.Sequential(
-            nn.Linear(args.latent_size, 128),
-            torch.nn.BatchNorm1d(128),
-            torch.nn.GELU(),
-
-            nn.Linear(128, 256),
-            torch.nn.BatchNorm1d(256),
-            torch.nn.GELU(),
-            nn.Linear(256, 512),
-            torch.nn.BatchNorm1d(512),
-            torch.nn.GELU(),
-            nn.Linear(512, 1024),
-            torch.nn.BatchNorm1d(1024),
-            torch.nn.GELU(),
-            nn.Linear(1024, np.prod(args.image_size, dtype=np.int32)),
-            nn.Sigmoid(),
-        )
-
-    def forward(self, z):
-
-        output = self.model(z)
-        image = output.reshape(z.shape[0], *args.image_size)
-
-        return image
-
-
-class Discriminator(nn.Module):
-
-    def __init__(self):
-        super(Discriminator, self).__init__()
-
-        self.model = nn.Sequential(
-            nn.Linear(np.prod(args.image_size, dtype=np.int32), 512),
-            torch.nn.GELU(),
-            nn.Linear(512, 256),
-            torch.nn.GELU(),
-            nn.Linear(256, 128),
-            torch.nn.GELU(),
-            nn.Linear(128, 64),
-            torch.nn.GELU(),
-            nn.Linear(64, 32),
-            torch.nn.GELU(),
-            nn.Linear(32, 1),
-            nn.Sigmoid(),
-        )
-
-    def forward(self, image):
-
-        prob = self.model(image.reshape(image.shape[0], -1))
-
-        return prob
-
-# Training
+# Data setting
 dataset = torchvision.datasets.MNIST("mnist_data", train=True, download=True,
                                      transform=torchvision.transforms.Compose(
                                          [
@@ -111,6 +49,7 @@ if use_gpu:
     labels_one = labels_one.to("cuda")
     labels_zero = labels_zero.to("cuda")
 
+# Training
 for epoch in range(args.epoch):
     for i, mini_batch in enumerate(dataloader):
         gt_images, _ = mini_batch
