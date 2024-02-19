@@ -50,8 +50,10 @@ if use_gpu:
     labels_zero = labels_zero.to("cuda")
 
 # Training
+iteration_num=0
 for epoch in range(args.epoch):
     for i, mini_batch in enumerate(dataloader):
+        iteration_num+=1
         gt_images, _ = mini_batch
 
 
@@ -81,9 +83,15 @@ for epoch in range(args.epoch):
         d_loss.backward()
         d_optimizer.step()
 
+        swanlab.log({"epoch": epoch+1},iteration_num)
+        swanlab.log({"loss": g_loss / 100},iteration_num)
+        swanlab.log({"loss": d_loss / 100},iteration_num)
+        swanlab.log({"loss": real_loss / 100},iteration_num)
+        swanlab.log({"loss": fake_loss / 100},iteration_num)
+
         if i % 50 == 0:
             print(f"step:{len(dataloader)*epoch+i}, recons_loss:{recons_loss.item()}, g_loss:{g_loss.item()}, d_loss:{d_loss.item()}, real_loss:{real_loss.item()}, fake_loss:{fake_loss.item()}")
 
         if i % 400 == 0:
             image = pred_images[:16].data
-            torchvision.utils.save_image(image, f"image_{len(dataloader)*epoch+i}.png", nrow=4)
+            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Test train 2', nrow=4)
