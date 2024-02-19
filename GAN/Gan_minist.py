@@ -11,11 +11,11 @@ from model import args
 
 logdir="./logs"
 
-swanlab.init(
-    experiment_name=args.exp,
-    config=args,
-    logdir=logdir
-    )
+#swanlab.init(
+#   experiment_name=args.exp,
+#   config=args,
+#  logdir=logdir
+#    )
 
 use_gpu = torch.cuda.is_available()
 
@@ -34,8 +34,8 @@ generator = Generator()
 discriminator = Discriminator()
 
 
-g_optimizer = torch.optim.Adam(generator.parameters(), lr=0.0003, betas=(0.4, 0.8), weight_decay=0.0001)
-d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=0.0003, betas=(0.4, 0.8), weight_decay=0.0001)
+g_optimizer = torch.optim.Adam(generator.parameters(), lr=args.learning_rate, betas=(0.4, 0.8), weight_decay=0.0001)
+d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=args.learning_rate, betas=(0.4, 0.8), weight_decay=0.0001)
 
 loss_fn = nn.BCELoss()
 labels_one = torch.ones(args.batch_size, 1)
@@ -83,15 +83,14 @@ for epoch in range(args.epoch):
         d_loss.backward()
         d_optimizer.step()
 
-        swanlab.log({"epoch": epoch+1},iteration_num)
-        swanlab.log({"loss": g_loss / 100},iteration_num)
-        swanlab.log({"loss": d_loss / 100},iteration_num)
-        swanlab.log({"loss": real_loss / 100},iteration_num)
-        swanlab.log({"loss": fake_loss / 100},iteration_num)
-
         if i % 50 == 0:
             print(f"step:{len(dataloader)*epoch+i}, recons_loss:{recons_loss.item()}, g_loss:{g_loss.item()}, d_loss:{d_loss.item()}, real_loss:{real_loss.item()}, fake_loss:{fake_loss.item()}")
 
         if i % 400 == 0:
             image = pred_images[:16].data
-            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Test train 2', nrow=4)
+            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Test train 2\image_{len(dataloader)*epoch+i}.png', nrow=4)
+            #swanlab.log({"epoch": epoch+1},iteration_num)
+            #swanlab.log({"loss": g_loss / 100},iteration_num)
+            #swanlab.log({"loss": d_loss / 100},iteration_num)
+            #swanlab.log({"loss": real_loss / 100},iteration_num)
+            #swanlab.log({"loss": fake_loss / 100},iteration_num)

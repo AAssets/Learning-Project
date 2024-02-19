@@ -1,0 +1,180 @@
+1 [SwanLab-INFO]:        Experiment GAN has been registered.
+2 [SwanLab-INFO]:        Run data will be saved locally in C:\LearningGit\Learning Project\GAN\logs\run-20240219_213308-06ff51be
+3 [SwanLab-INFO]:        Experiment_name: GAN_2024-02-19_21-33-08
+4 [SwanLab-INFO]:        Run `swanlab watch` to view SwanLab Experiment Dashboard
+5 use gpu for training
+6 step:0, recons_loss:0.471748024225235, g_loss:0.6933460831642151, d_loss:1.3867425918579102, real_loss:0.6696467399597168, fake_loss:0.7170958518981934
+7 [SwanLab-WARNING]:     Step 1 on tag loss already exists, ignored.
+8 [SwanLab-WARNING]:     Step 1 on tag loss already exists, ignored.
+9 [SwanLab-WARNING]:     Step 1 on tag loss already exists, ignored.
+10 step:50, recons_loss:0.18341320753097534, g_loss:100.00917053222656, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+11 step:100, recons_loss:0.18359167873859406, g_loss:100.0091781616211, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+12 step:150, recons_loss:0.18552912771701813, g_loss:100.00927734375, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+13 step:200, recons_loss:0.18892249464988708, g_loss:0.00944612454622984, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+14 step:250, recons_loss:0.18345056474208832, g_loss:0.009172528050839901, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+15 step:300, recons_loss:0.14500753581523895, g_loss:0.0072503769770264626, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+16 step:350, recons_loss:0.18356990814208984, g_loss:0.009178495965898037, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+17 step:400, recons_loss:0.18771910667419434, g_loss:0.009385955519974232, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+18 [SwanLab-WARNING]:     Step 401 on tag loss already exists, ignored.
+19 [SwanLab-WARNING]:     Step 401 on tag loss already exists, ignored.
+20 [SwanLab-WARNING]:     Step 401 on tag loss already exists, ignored.
+21 step:450, recons_loss:0.18615929782390594, g_loss:0.009307964704930782, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+22 step:500, recons_loss:0.18603111803531647, g_loss:0.009301556274294853, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+23 step:550, recons_loss:0.1745760142803192, g_loss:0.008728801272809505, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+24 step:600, recons_loss:0.1832166314125061, g_loss:100.00916290283203, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+25 step:650, recons_loss:0.18366092443466187, g_loss:0.009183046407997608, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+26 step:700, recons_loss:0.18841178715229034, g_loss:100.0094223022461, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+27 step:750, recons_loss:0.15984998643398285, g_loss:0.007992499507963657, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+28 step:800, recons_loss:0.17375344038009644, g_loss:0.008687672205269337, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+29 [SwanLab-WARNING]:     Step 801 on tag loss already exists, ignored.
+30 [SwanLab-WARNING]:     Step 801 on tag loss already exists, ignored.
+31 [SwanLab-WARNING]:     Step 801 on tag loss already exists, ignored.
+32 step:850, recons_loss:0.13892993330955505, g_loss:0.006946496665477753, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+33 step:900, recons_loss:0.26280805468559265, g_loss:0.013140402734279633, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+34 step:937, recons_loss:0.18251411616802216, g_loss:0.009125705808401108, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+35 [SwanLab-WARNING]:     Step 938 on tag loss already exists, ignored.
+36 [SwanLab-WARNING]:     Step 938 on tag loss already exists, ignored.
+37 [SwanLab-WARNING]:     Step 938 on tag loss already exists, ignored.
+38 step:987, recons_loss:0.177964985370636, g_loss:0.008898249827325344, d_loss:100.0, real_loss:5.96054292145709e-07, fake_loss:100.0
+39 step:1037, recons_loss:0.1799013465642929, g_loss:0.008995067328214645, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+40 step:1087, recons_loss:0.1744028627872467, g_loss:100.00872039794922, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+41 step:1137, recons_loss:0.20410600304603577, g_loss:0.010205300524830818, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+42 step:1187, recons_loss:0.18421556055545807, g_loss:0.009210778400301933, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+43 step:1237, recons_loss:0.18800607323646545, g_loss:0.009400303475558758, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+44 step:1287, recons_loss:0.17486925423145294, g_loss:0.008743463084101677, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+45 step:1337, recons_loss:0.4490543305873871, g_loss:100.02245330810547, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+46 [SwanLab-WARNING]:     Step 1338 on tag loss already exists, ignored.
+47 [SwanLab-WARNING]:     Step 1338 on tag loss already exists, ignored.
+48 [SwanLab-WARNING]:     Step 1338 on tag loss already exists, ignored.
+49 step:1387, recons_loss:0.17612096667289734, g_loss:0.008806048892438412, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+50 step:1437, recons_loss:0.17180651426315308, g_loss:0.008590325713157654, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+51 step:1487, recons_loss:0.16980241239070892, g_loss:0.008490120992064476, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+52 step:1537, recons_loss:0.18277893960475922, g_loss:0.00913894735276699, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+53 step:1587, recons_loss:0.18109747767448425, g_loss:0.009054874069988728, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+54 step:1637, recons_loss:0.12922172248363495, g_loss:0.006461086217314005, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+55 step:1687, recons_loss:0.17503775656223297, g_loss:0.008751887828111649, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+56 step:1737, recons_loss:0.18419061601161957, g_loss:100.00920867919922, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+57 [SwanLab-WARNING]:     Step 1738 on tag loss already exists, ignored.
+58 [SwanLab-WARNING]:     Step 1738 on tag loss already exists, ignored.
+59 [SwanLab-WARNING]:     Step 1738 on tag loss already exists, ignored.
+60 step:1787, recons_loss:0.1837465614080429, g_loss:0.00918732862919569, d_loss:100.0, real_loss:3.818468314875645e-07, fake_loss:100.0
+61 step:1837, recons_loss:0.17209593951702118, g_loss:100.00860595703125, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+62 step:1874, recons_loss:0.15906772017478943, g_loss:100.00794982910156, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+63 [SwanLab-WARNING]:     Step 1875 on tag loss already exists, ignored.
+64 [SwanLab-WARNING]:     Step 1875 on tag loss already exists, ignored.
+65 [SwanLab-WARNING]:     Step 1875 on tag loss already exists, ignored.
+66 step:1924, recons_loss:0.17752382159233093, g_loss:0.008876191452145576, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+67 step:1974, recons_loss:0.18021522462368011, g_loss:0.00901076104491949, d_loss:100.0, real_loss:1.8626462150450607e-08, fake_loss:100.0
+68 step:2024, recons_loss:0.1792922019958496, g_loss:0.008964610286056995, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+69 step:2074, recons_loss:0.17722873389720917, g_loss:0.008861436508595943, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+70 step:2124, recons_loss:0.16862086951732635, g_loss:100.00843048095703, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+71 step:2174, recons_loss:0.16850459575653076, g_loss:100.0084228515625, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+72 step:2224, recons_loss:0.16587914526462555, g_loss:0.008293957449495792, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+73 step:2274, recons_loss:0.18610712885856628, g_loss:0.009305357001721859, d_loss:100.03018188476562, real_loss:0.030179070308804512, fake_loss:100.0
+74 [SwanLab-WARNING]:     Step 2275 on tag loss already exists, ignored.
+75 [SwanLab-WARNING]:     Step 2275 on tag loss already exists, ignored.
+76 [SwanLab-WARNING]:     Step 2275 on tag loss already exists, ignored.
+77 step:2324, recons_loss:0.1807362288236618, g_loss:100.009033203125, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+78 step:2374, recons_loss:0.17425870895385742, g_loss:0.008712935261428356, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+79 step:2424, recons_loss:0.1458732783794403, g_loss:0.007293663918972015, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+80 step:2474, recons_loss:0.18203754723072052, g_loss:0.00910187792032957, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+81 step:2524, recons_loss:0.1794472336769104, g_loss:0.00897236168384552, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+82 step:2574, recons_loss:0.1711132973432541, g_loss:0.00855566468089819, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+83 step:2624, recons_loss:0.18143025040626526, g_loss:0.009071513079106808, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+84 step:2674, recons_loss:0.6859535574913025, g_loss:0.034297678619623184, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+85 [SwanLab-WARNING]:     Step 2675 on tag loss already exists, ignored.
+86 [SwanLab-WARNING]:     Step 2675 on tag loss already exists, ignored.
+87 [SwanLab-WARNING]:     Step 2675 on tag loss already exists, ignored.
+88 step:2724, recons_loss:0.1614726483821869, g_loss:0.00807363260537386, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+89 step:2774, recons_loss:0.18238386511802673, g_loss:0.009119193069636822, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+90 step:2811, recons_loss:0.1420581191778183, g_loss:0.007102906238287687, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+91 [SwanLab-WARNING]:     Step 2812 on tag loss already exists, ignored.
+92 [SwanLab-WARNING]:     Step 2812 on tag loss already exists, ignored.
+93 [SwanLab-WARNING]:     Step 2812 on tag loss already exists, ignored.
+94 step:2861, recons_loss:0.18436630070209503, g_loss:0.009218315593898296, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+95 step:2911, recons_loss:0.18585790693759918, g_loss:0.009292895905673504, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+96 step:2961, recons_loss:0.1878761649131775, g_loss:100.00939178466797, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+97 step:3011, recons_loss:0.18451425433158875, g_loss:100.00922393798828, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+98 step:3061, recons_loss:0.17380686104297638, g_loss:0.008690343238413334, d_loss:100.00720977783203, real_loss:0.007210090756416321, fake_loss:100.0
+99 step:3111, recons_loss:0.1922006756067276, g_loss:0.009610033594071865, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+100 step:3161, recons_loss:0.19285957515239716, g_loss:0.009642979130148888, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+101 step:3211, recons_loss:0.13332273066043854, g_loss:0.006666136439889669, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+102 [SwanLab-WARNING]:     Step 3212 on tag loss already exists, ignored.
+103 [SwanLab-WARNING]:     Step 3212 on tag loss already exists, ignored.
+104 [SwanLab-WARNING]:     Step 3212 on tag loss already exists, ignored.
+105 step:3261, recons_loss:0.18059001863002777, g_loss:0.009029501117765903, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+106 step:3311, recons_loss:0.18442358076572418, g_loss:0.009221179410815239, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+107 step:3361, recons_loss:0.17017948627471924, g_loss:0.008508974686264992, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+108 step:3411, recons_loss:0.1976790875196457, g_loss:0.00988395418971777, d_loss:100.0, real_loss:2.1606749101010791e-07, fake_loss:100.0
+109 step:3461, recons_loss:0.16680197417736053, g_loss:0.008340098895132542, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+110 step:3511, recons_loss:0.13861386477947235, g_loss:0.00693069351837039, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+111 step:3561, recons_loss:0.2168084681034088, g_loss:100.0108413696289, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+112 step:3611, recons_loss:0.18051116168498993, g_loss:0.009025557897984982, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+113 [SwanLab-WARNING]:     Step 3612 on tag loss already exists, ignored.
+114 [SwanLab-WARNING]:     Step 3612 on tag loss already exists, ignored.
+115 [SwanLab-WARNING]:     Step 3612 on tag loss already exists, ignored.
+116 step:3661, recons_loss:0.18046890199184418, g_loss:0.009023445658385754, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+117 step:3711, recons_loss:0.18457405269145966, g_loss:0.009228702634572983, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+118 step:3748, recons_loss:0.17330242693424225, g_loss:100.0086669921875, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+119 [SwanLab-WARNING]:     Step 3749 on tag loss already exists, ignored.
+120 [SwanLab-WARNING]:     Step 3749 on tag loss already exists, ignored.
+121 [SwanLab-WARNING]:     Step 3749 on tag loss already exists, ignored.
+122 step:3798, recons_loss:0.18401476740837097, g_loss:100.00920104980469, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+123 step:3848, recons_loss:0.18419185280799866, g_loss:0.009209592826664448, d_loss:100.0000228881836, real_loss:2.4490094801876694e-05, fake_loss:100.0
+124 step:3898, recons_loss:0.1678176373243332, g_loss:0.008390882052481174, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+125 step:3948, recons_loss:0.16334527730941772, g_loss:100.00816345214844, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+126 step:3998, recons_loss:0.16670258343219757, g_loss:100.00833892822266, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+127 step:4048, recons_loss:0.17603842914104462, g_loss:100.00880432128906, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+128 step:4098, recons_loss:0.22711344063282013, g_loss:100.0113525390625, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+129 step:4148, recons_loss:0.17745038866996765, g_loss:100.00887298583984, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+130 [SwanLab-WARNING]:     Step 4149 on tag loss already exists, ignored.
+131 [SwanLab-WARNING]:     Step 4149 on tag loss already exists, ignored.
+132 [SwanLab-WARNING]:     Step 4149 on tag loss already exists, ignored.
+133 step:4198, recons_loss:0.19747667014598846, g_loss:0.009873833507299423, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+134 step:4248, recons_loss:0.17010587453842163, g_loss:100.00850677490234, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+135 step:4298, recons_loss:0.17405566573143005, g_loss:100.00870513916016, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+136 step:4348, recons_loss:0.18522986769676208, g_loss:0.00926149357110262, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+137 step:4398, recons_loss:0.17323671281337738, g_loss:100.00865936279297, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+138 step:4448, recons_loss:0.17929130792617798, g_loss:0.008964565582573414, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+139 step:4498, recons_loss:0.17830638587474823, g_loss:0.008915319107472897, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+140 step:4548, recons_loss:0.17513488233089447, g_loss:0.008756744675338268, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+141 [SwanLab-WARNING]:     Step 4549 on tag loss already exists, ignored.
+142 [SwanLab-WARNING]:     Step 4549 on tag loss already exists, ignored.
+143 [SwanLab-WARNING]:     Step 4549 on tag loss already exists, ignored.
+144 step:4598, recons_loss:0.1829853057861328, g_loss:0.009149265475571156, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+145 step:4648, recons_loss:0.1800525039434433, g_loss:0.00900262501090765, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+146 step:4685, recons_loss:0.14366433024406433, g_loss:0.0071832165122032166, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+147 [SwanLab-WARNING]:     Step 4686 on tag loss already exists, ignored.
+148 [SwanLab-WARNING]:     Step 4686 on tag loss already exists, ignored.
+149 [SwanLab-WARNING]:     Step 4686 on tag loss already exists, ignored.
+150 step:4735, recons_loss:0.17955012619495392, g_loss:0.008977506309747696, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+151 step:4785, recons_loss:0.17844589054584503, g_loss:0.008922294713556767, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+152 step:4835, recons_loss:0.18713892996311188, g_loss:0.009356946684420109, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+153 step:4885, recons_loss:0.17945608496665955, g_loss:0.008972804062068462, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+154 step:4935, recons_loss:0.1851479560136795, g_loss:0.00925739761441946, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+155 step:4985, recons_loss:0.17037031054496765, g_loss:0.008518516086041927, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+156 step:5035, recons_loss:0.18768532574176788, g_loss:0.00938426610082388, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+157 step:5085, recons_loss:0.18137432634830475, g_loss:20.711366653442383, d_loss:22.42177963256836, real_loss:22.42177963256836, fake_loss:1.0498860669727605e-09
+158 [SwanLab-WARNING]:     Step 5086 on tag loss already exists, ignored.
+159 [SwanLab-WARNING]:     Step 5086 on tag loss already exists, ignored.
+160 [SwanLab-WARNING]:     Step 5086 on tag loss already exists, ignored.
+161 step:5135, recons_loss:0.17574189603328705, g_loss:0.008787094615399837, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+162 step:5185, recons_loss:0.18704178929328918, g_loss:0.009352089837193489, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+163 step:5235, recons_loss:0.1773567497730255, g_loss:0.008867837488651276, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+164 step:5285, recons_loss:0.18602308630943298, g_loss:0.009301154874265194, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+165 step:5335, recons_loss:0.17216207087039948, g_loss:0.008608103729784489, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+166 step:5385, recons_loss:0.1996421068906784, g_loss:0.00998210534453392, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+167 step:5435, recons_loss:0.1803472489118576, g_loss:0.009017362259328365, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+168 step:5485, recons_loss:0.17978212237358093, g_loss:0.008989105932414532, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+169 [SwanLab-WARNING]:     Step 5486 on tag loss already exists, ignored.
+170 [SwanLab-WARNING]:     Step 5486 on tag loss already exists, ignored.
+171 [SwanLab-WARNING]:     Step 5486 on tag loss already exists, ignored.
+172 step:5535, recons_loss:0.19198094308376312, g_loss:0.009599047712981701, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+173 step:5585, recons_loss:0.17419885098934174, g_loss:0.008709942921996117, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+174 step:5622, recons_loss:0.2510395348072052, g_loss:100.0125503540039, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+175 [SwanLab-WARNING]:     Step 5623 on tag loss already exists, ignored.
+176 [SwanLab-WARNING]:     Step 5623 on tag loss already exists, ignored.
+177 [SwanLab-WARNING]:     Step 5623 on tag loss already exists, ignored.
+178 step:5672, recons_loss:0.17652761936187744, g_loss:0.008826381526887417, d_loss:100.0, real_loss:0.0, fake_loss:100.0
+179 step:5722, recons_loss:0.18213465809822083, g_loss:100.00910949707031, d_loss:100.0, real_loss:100.0, fake_loss:0.0
+180 [SwanLab-ERROR]:       Error happended while training, SwanLab will throw it

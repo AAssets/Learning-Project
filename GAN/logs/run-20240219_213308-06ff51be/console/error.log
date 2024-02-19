@@ -1,0 +1,24 @@
+2024-02-19 21:35:05.143455
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "c:\LearningGit\Learning Project\GAN\Gan_minist.py", line 84, in <module>
+    d_optimizer.step()
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\optim\optimizer.py", line 385, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\optim\optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\optim\adam.py", line 166, in step
+    adam(
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\optim\adam.py", line 316, in adam
+    func(params,
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\optim\adam.py", line 581, in _multi_tensor_adam
+    torch._foreach_div_(exp_avg_sq_sqrt, bias_correction2_sqrt)
+
+
