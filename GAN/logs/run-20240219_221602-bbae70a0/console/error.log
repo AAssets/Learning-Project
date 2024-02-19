@@ -1,0 +1,19 @@
+2024-02-19 22:43:36.205067
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "c:\LearningGit\Learning Project\GAN\Gan_minist.py", line 67, in <module>
+    g_optimizer.zero_grad()
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\_dynamo\eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\optim\optimizer.py", line 820, in zero_grad
+    p.grad = None
+    ^^^^^^
+
+
