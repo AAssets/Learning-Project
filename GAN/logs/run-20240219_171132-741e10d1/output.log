@@ -1,0 +1,5 @@
+SwanLab INFO [2024-02-19 17:11:37,006] Experiment GAN has been registered.
+SwanLab INFO [2024-02-19 17:11:37,007] Run data will be saved locally in C:\LearningGit\Learning Project\GAN\logs\run-20240219_171132-741e10d1
+SwanLab INFO [2024-02-19 17:11:37,007] Experiment_name: GAN_2024-02-19_17-11-32
+SwanLab INFO [2024-02-19 17:11:37,008] Run `swanlab watch` to view SwanLab Experiment Dashboard
+SwanLab ERROR [2024-02-19 17:12:01,769] Error happended while training, SwanLab will throw it

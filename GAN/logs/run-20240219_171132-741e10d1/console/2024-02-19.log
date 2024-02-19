@@ -1,0 +1,22 @@
+1 [SwanLab-INFO]:        Experiment GAN has been registered.
+2 [SwanLab-INFO]:        Run data will be saved locally in C:\LearningGit\Learning Project\GAN\logs\run-20240219_171132-741e10d1
+3 [SwanLab-INFO]:        Experiment_name: GAN_2024-02-19_17-11-32
+4 [SwanLab-INFO]:        Run `swanlab watch` to view SwanLab Experiment Dashboard
+5 Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+6 Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to mnist_data\MNIST\raw\train-images-idx3-ubyte.gz
+7 Extracting mnist_data\MNIST\raw\train-images-idx3-ubyte.gz to mnist_data\MNIST\raw
+8 
+9 Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+10 Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to mnist_data\MNIST\raw\train-labels-idx1-ubyte.gz
+11 Extracting mnist_data\MNIST\raw\train-labels-idx1-ubyte.gz to mnist_data\MNIST\raw
+12 
+13 Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+14 Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to mnist_data\MNIST\raw\t10k-images-idx3-ubyte.gz
+15 Extracting mnist_data\MNIST\raw\t10k-images-idx3-ubyte.gz to mnist_data\MNIST\raw
+16 
+17 Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+18 Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to mnist_data\MNIST\raw\t10k-labels-idx1-ubyte.gz
+19 Extracting mnist_data\MNIST\raw\t10k-labels-idx1-ubyte.gz to mnist_data\MNIST\raw
+20 
+21 use gpu for training
+22 [SwanLab-ERROR]:       Error happended while training, SwanLab will throw it

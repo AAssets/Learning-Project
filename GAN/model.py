@@ -9,9 +9,8 @@ parser.add_argument('--learning_rate', type=float, default=0.1, help='Learning r
 parser.add_argument('--epoch', type=int, default=200, help='epoch of train')
 parser.add_argument('--exp', type=str, default='GAN', help='exp name')
 parser.add_argument('--latent_size', type=int, default='64', help='latent size')
-parser.add_argument('--image_size', type=int, default='784', help='image size')
+parser.add_argument('--image_size', type=tuple, default=[1,28,28], help='image size')
 args = parser.parse_args()
-
 
 
 class Generator(nn.Module):

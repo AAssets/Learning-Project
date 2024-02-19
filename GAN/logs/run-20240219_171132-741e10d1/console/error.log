@@ -1,0 +1,20 @@
+2024-02-19 17:12:01.794662
+<class 'TypeError'>
+TypeError('Value after * must be an iterable, not int')
+  File "c:\LearningGit\Learning Project\GAN\Gan_minist.py", line 64, in <module>
+    pred_images = generator(z)
+                  ^^^^^^^^^^^^
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\asset\miniconda3\envs\pytorch\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "c:\LearningGit\Learning Project\GAN\model.py", line 43, in forward
+    image = output.reshape(z.shape[0], *args.image_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
