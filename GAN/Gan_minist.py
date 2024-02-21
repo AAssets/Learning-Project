@@ -88,7 +88,7 @@ for epoch in range(args.epoch):
 
         if i % 400 == 0:
             image = pred_images[:16].data
-            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Test train 4\image_{len(dataloader)*epoch+i}.png', nrow=4)
+            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Test train 5\image_{len(dataloader)*epoch+i}.png', nrow=4)
 
     swanlab.log({"g loss": g_loss / 100},iteration_num)
     swanlab.log({"d loss": d_loss / 100},iteration_num)

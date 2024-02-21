@@ -4,8 +4,8 @@ import argparse
 import numpy as np
 
 parser = argparse.ArgumentParser(description='The parser for text generation')
-parser.add_argument('--batch_size', type=int, default=256, help='batch size of train')
-parser.add_argument('--learning_rate', type=float, default=0.0003, help='Learning rate of train')
+parser.add_argument('--batch_size', type=int, default=64, help='batch size of train')
+parser.add_argument('--learning_rate', type=float, default=0.001, help='Learning rate of train')
 parser.add_argument('--epoch', type=int, default=200, help='epoch of train')
 parser.add_argument('--exp', type=str, default='GAN', help='exp name')
 parser.add_argument('--latent_size', type=int, default='64', help='latent size')
