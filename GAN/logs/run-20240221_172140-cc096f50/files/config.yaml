@@ -1,0 +1,36 @@
+D_size:
+  desc: null
+  sort: 8
+  value: 64
+G_size:
+  desc: null
+  sort: 7
+  value: 64
+batch_size:
+  desc: null
+  sort: 0
+  value: 128
+epoch:
+  desc: null
+  sort: 2
+  value: 200
+exp:
+  desc: null
+  sort: 3
+  value: GAN
+image_size:
+  desc: null
+  sort: 5
+  value: 1
+latent_size:
+  desc: null
+  sort: 4
+  value: 64
+learning_rate:
+  desc: null
+  sort: 1
+  value: 0.0003
+z_dimention:
+  desc: null
+  sort: 6
+  value: 100

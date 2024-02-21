@@ -4,10 +4,10 @@ import torch.nn as nn
 import numpy as np
 import argparse
 import swanlab
-import model
-from model import Generator
-from model import Discriminator
-from model import args
+import convolutional_model
+from convolutional_model import Generator
+from convolutional_model import Discriminator
+from convolutional_model import args
 
 logdir="./logs"
 
@@ -23,7 +23,7 @@ use_gpu = torch.cuda.is_available()
 dataset = torchvision.datasets.MNIST("mnist_data", train=True, download=True,
                                      transform=torchvision.transforms.Compose(
                                          [
-                                             torchvision.transforms.Resize(28),
+                                             torchvision.transforms.Resize(64),
                                              torchvision.transforms.ToTensor(),
                                          ]
                                                                              )
@@ -39,7 +39,9 @@ d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=args.learning_rate
 
 loss_fn = nn.BCELoss()
 labels_one = torch.ones(args.batch_size, 1)
+labels_one = labels_one.squeeze(1)
 labels_zero = torch.zeros(args.batch_size, 1)
+labels_zero = labels_one.squeeze(0)
 
 if use_gpu:
     print("use gpu for training")
@@ -57,7 +59,7 @@ for epoch in range(args.epoch):
         gt_images, _ = mini_batch
 
 
-        z = torch.randn(args.batch_size, args.latent_size)
+        z = torch.randn(args.batch_size, args.z_dimention, 1, 1,)
 
         if use_gpu:
             gt_images = gt_images.to("cuda")
@@ -88,7 +90,7 @@ for epoch in range(args.epoch):
 
         if i % 400 == 0:
             image = pred_images[:16].data
-            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Test train 5\image_{len(dataloader)*epoch+i}.png', nrow=4)
+            torchvision.utils.save_image(image, f'C:\LearningGit\Learning Project\GAN\Conv test train 1\image_{len(dataloader)*epoch+i}.png', nrow=4)
 
     swanlab.log({"g loss": g_loss / 100},iteration_num)
     swanlab.log({"d loss": d_loss / 100},iteration_num)
